@@ -2,7 +2,12 @@
 <h1>{{title}}</h1>
 <ul>
     <li v-for="element in elements" v-bind:key="element">
-       {{element}}
+        <p>{{element.id}}.
+            <span>{{element.first_name}}</span>{{' '}}
+            <span> {{element.last_name}}</span>
+        </p>
+       
+       <!-- {{element}} -->
     </li>
 </ul>
 </template>
@@ -18,3 +23,12 @@ export default {
 }
 }
 </script>
+
+<style scoped>
+    li {
+        border: 1px solid rgb(175, 175, 175);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+</style>
