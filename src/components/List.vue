@@ -6,13 +6,12 @@
             <span>{{element.first_name}}</span>{{' '}}
             <span> {{element.last_name}}</span>
         </p>
-       
-       <!-- {{element}} -->
     </li>
 </ul>
 </template>
 
 <script>
+//Импорт json
 import json from '../../data.json'
 export default {
     data() {
@@ -24,6 +23,7 @@ export default {
 }
 </script>
 
+//Стили
 <style scoped>
     li {
         border: 1px solid rgb(175, 175, 175);
